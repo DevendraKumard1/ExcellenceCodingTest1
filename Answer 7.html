@@ -1,0 +1,18 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<script src="http://www.example.com/api/get/1"></script>
+	</head>
+	<body>
+		<button>Get Data</button>
+	</body>
+	<script>
+       $(document).ready(function(){
+       $("button").click(function(){
+       $.get("http://www.example.com/api/get/1", function(data, status){
+         alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+	</script>
+	</html>

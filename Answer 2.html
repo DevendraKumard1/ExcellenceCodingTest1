@@ -1,0 +1,22 @@
+<DOCTYPE html>
+	<html>
+	<head>
+	</head>
+	<body>
+	</body>
+	<script>
+		var arr = [0,0,1,1,0,0,0,1,0,0,1,1,1,0];
+        var sum = 0;
+        var max  = 0 ;
+        for(var i=0;i<arr.length;i++){
+           if(arr[i] == 0){
+               sum = 0;
+           } else {
+               sum++;
+               if(sum > max)
+                   max = sum;
+           }
+        }   
+    document.write("Max consecutive 1's is: "+max);	
+	</script>
+	</html>
